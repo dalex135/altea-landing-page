@@ -1,0 +1,100 @@
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+
+
+  <div class="container px-4 px-lg-5">
+      <a class="navbar-brand" href="#page-top"></a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fas fa-bars"></i>
+      </button>
+
+
+
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+
+
+
+          <ul class="navbar-nav ms-auto">
+
+              <li class="nav-item " (mouseleave)='out(drop)'>
+                  <div ngbDropdown class="dropdown" #drop="ngbDropdown"  (mouseover)='over(drop)'  >
+                    <a class="nav-link" id="dropdownWhatWeDo" ngbDropdownToggle href="#whatwedo"
+                    style="color: black;">
+                      What we do
+                    </a>
+                    <div ngbDropdownMenu  aria-labelledby="dropdownWhatWeDo"
+                    class="dropdown dropdown-menu-right" (mouseleave)='out(drop)'>
+                        <a class="dropdown-item">Image Gallery</a>
+                        <a class="dropdown-item">Stories of Impact</a>
+                        <a class="dropdown-item">Blog/News</a>
+                        <a class="dropdown-item">IT Support</a>
+                        <a class="dropdown-item">Reports</a>
+                    </div>
+                  </div>
+              </li>
+              <li class="nav-item " (mouseleave)='out(drop1)'>
+                <div ngbDropdown class="dropdown" #drop1="ngbDropdown"  (mouseover)='over(drop1)'  >
+                  <a class="nav-link" id="dropdownWhatWeDo" ngbDropdownToggle href="#howtodonate"
+                  style="color: black;">
+                    How to Donate
+                  </a>
+                  <div ngbDropdownMenu  aria-labelledby="dropdownWhatWeDo"
+                  class="dropdown dropdown-menu-right" (mouseleave)='out(drop1)'>
+                      <a class="dropdown-item">Donations</a>
+                      <a class="dropdown-item">Be an Internet Donor</a>
+                      <a class="dropdown-item">Donate IT Harware</a>
+                  </div>
+                </div>
+            </li>
+
+            <li class="nav-item " (mouseleave)='out(drop2)'>
+              <div ngbDropdown class="dropdown" #drop2="ngbDropdown"  (mouseover)='over(drop2)'  >
+                <a class="nav-link" id="dropdownWhatWeDo" ngbDropdownToggle href="#shooolsdonors"
+                style="color: black;">
+                  Schools/Donors
+                </a>
+                <div ngbDropdownMenu  aria-labelledby="dropdownWhatWeDo"
+                class="dropdown dropdown-menu-right" (mouseleave)='out(drop2)'>
+                    <a class="dropdown-item">Donations</a>
+                    <a class="dropdown-item">Be an Internet Donor</a>
+                    <a class="dropdown-item">Donate IT Harware</a>
+                </div>
+              </div>
+          </li>
+
+          <li class="nav-item " (mouseleave)='out(drop3)'>
+            <div ngbDropdown class="dropdown" #drop3="ngbDropdown"  (mouseover)='over(drop3)'  >
+              <a class="nav-link" id="dropdownWhatWeDo" ngbDropdownToggle href="#shooolsdonors"
+              style="color: black;">
+                About Us
+              </a>
+              <div ngbDropdownMenu  aria-labelledby="dropdownWhatWeDo"
+              class="dropdown dropdown-menu-right" (mouseleave)='out(drop3)'>
+                  <a class="dropdown-item">Our Mission/Vision</a>
+                  <a class="dropdown-item">Our Story</a>
+                  <a class="dropdown-item">Our Supporters</a>
+                  <a class="dropdown-item">Contact Us</a>
+              </div>
+            </div>
+        </li>
+
+
+        </ul>
+      </div>
+
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+      </div>
+  </div>
+</nav>
+
+<app-main-header id="#"></app-main-header>
+
+<app-what-we-do id="whatwedo"></app-what-we-do>
+
+<app-how-to-donate id="howtodonate"></app-how-to-donate>
+
+<app-schools-donors id="shooolsdonors"></app-schools-donors>
+
